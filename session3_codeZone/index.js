@@ -18,3 +18,20 @@ crypto.pbkdf2("secret", "salt", 100000, 64, "sha512", () => {
 crypto.pbkdf2("secret", "salt", 100000, 64, "sha512", () => {
   console.log("End of PBKDF2 ms", performance.now());
 });
+//----------------------------------------------------------
+fetch("https://dummyjson.com/products").then(() => {
+  console.log("End of request ms", performance.now());
+});
+fetch("https://dummyjson.com/products").then(() => {
+  console.log("End of request ms", performance.now());
+});
+fetch("https://dummyjson.com/products").then(() => {
+  console.log("End of request ms", performance.now());
+});
+fetch("https://dummyjson.com/products").then(() => {
+  console.log("End of request ms", performance.now());
+});
+fetch("https://dummyjson.com/products").then(() => {
+  console.log("End of request ms", performance.now());
+});
+// Although these are also more than 4, they seem to have the same execution time. That is because this isn't managed by the thread pool but rather managed by the os kernels (differs from each os).This is where node.js shines, it shines in network based processes more than cpu related tasks.
