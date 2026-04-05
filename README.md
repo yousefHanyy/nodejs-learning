@@ -6,7 +6,7 @@ This repository documents my journey learning backend development using Node.js.
 
 - [✔️] Node.js Basics
 - [✔️] File System
-- [ ] HTTP Module
+- [⌛] HTTP Module
 - [ ] Express.js
 - [ ] MongoDB
 - [ ] REST APIs
